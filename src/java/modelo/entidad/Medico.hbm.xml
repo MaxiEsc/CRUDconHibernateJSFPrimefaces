@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10/02/2022 09:39:47 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="medicos" name="modelo.entidad.Medico" optimistic-lock="version" table="medico">
+    <id name="idMedico" type="java.lang.Integer">
+      <column name="id_medico"/>
+      <generator class="identity"/>
+    </id>
+    <property name="nombre" type="string">
+      <column length="45" name="nombre" not-null="true"/>
+    </property>
+    <property name="apellido" type="string">
+      <column length="45" name="apellido" not-null="true"/>
+    </property>
+    <property name="sala" type="int">
+      <column name="sala" not-null="true"/>
+    </property>
+    <property name="especialidad" type="string">
+      <column length="45" name="especialidad" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
